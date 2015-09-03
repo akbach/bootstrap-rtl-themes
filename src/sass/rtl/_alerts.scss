@@ -1,0 +1,9 @@
+.alert-dismissable,
+.alert-dismissible {
+    padding-left: ($alert-padding + 20);
+    padding-right: ($alert-padding);
+    .close {
+        right: auto;
+        left: -21px;
+    }
+}

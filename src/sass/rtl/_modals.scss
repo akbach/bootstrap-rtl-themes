@@ -1,0 +1,18 @@
+.modal-footer {
+    text-align: left;
+    &.flip {
+        text-align: right;
+    }
+    .btn + .btn {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+    .btn-group .btn + .btn {
+        margin-right: -1px;
+        margin-left: auto;
+    }
+    .btn-block + .btn-block {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}

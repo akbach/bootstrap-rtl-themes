@@ -1,0 +1,71 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#indicators #{t['Indicators']}
+    .row
+        .col-lg-12
+            h2 #{t['Alerts']}
+            .bs-component
+                .alert.alert-dismissible.alert-warning
+                    button.close(type="button", data-dismiss="alert") &#215;
+                    h4 #{t['Warning']}!
+                    p
+                        | #{t['warning text']},&nbsp;
+                        a.alert-link(href="#") #{t['warning link']}
+                        | .
+    .row
+        .col-lg-4
+            .bs-component
+                .alert.alert-dismissible.alert-danger
+                    button.close(type="button", data-dismiss="alert") &#215;
+                    strong #{t['Oh snap']}!&nbsp;
+                    a.alert-link(href="#") #{t['Change a few things up']} &nbsp;
+                    | #{t['and try submitting again']}.
+        .col-lg-4
+            .bs-component
+                .alert.alert-dismissible.alert-success
+                    button.close(type="button", data-dismiss="alert") &#215;
+                    strong #{t['Well done']}!&nbsp;
+                    | #{t['You successfully read']}&nbsp;
+                    a.alert-link(href="#") #{t['this important alert message']}
+                    | .
+        .col-lg-4
+            .bs-component
+                .alert.alert-dismissible.alert-info
+                    button.close(type="button", data-dismiss="alert") &#215;
+                    strong #{t['Heads up']}!&nbsp;
+                    | #{t['This']}&nbsp;
+                    a.alert-link(href="#") #{t['alert needs your attention']}&nbsp;
+                    | , #{t['but it"s not super important']}.
+    .row
+        .col-lg-4
+            h2 #{t['Labels']}
+            .bs-component(style="margin-bottom: 40px;")
+                span.label.label-default #{t['Default']}
+                | &nbsp;
+                span.label.label-primary #{t['Primary']}
+                | &nbsp;
+                span.label.label-success #{t['Success']}
+                | &nbsp;
+                span.label.label-warning #{t['Warning']}
+                | &nbsp;
+                span.label.label-danger #{t['Danger']}
+                | &nbsp;
+                span.label.label-info #{t['Info']}
+        .col-lg-8
+            h2 #{t['Badges']}
+            .bs-component
+                ul.nav.nav-pills
+                    li.active
+                        a(href="#")
+                            | #{t['Home']}
+                            span.badge 42
+                    li
+                        a(href="#")
+                            | #{t['Profile']}
+                            span.badge
+                    li
+                        a(href="#")
+                            | #{t['Messages']}
+                            span.badge 3

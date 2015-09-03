@@ -1,0 +1,85 @@
+.btn-group,
+.btn-group-vertical {
+    > .btn {
+        float: right;
+    }
+}
+
+.btn-group {
+    .btn + .btn,
+    .btn + .btn-group,
+    .btn-group + .btn,
+    .btn-group + .btn-group {
+        margin-right: -1px;
+        margin-left: 0px;
+    }
+}
+
+.btn-toolbar {
+    margin-right: -5px;
+    margin-left: 0px;
+    .btn-group,
+    .input-group {
+        float: right;
+    }
+    > .btn,
+    > .btn-group,
+    > .input-group {
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+}
+
+.btn-group > .btn:first-child {
+    margin-right: 0;
+    &:not(:last-child):not(.dropdown-toggle) {
+        @include border-right-radius($border-radius-base);
+        @include border-left-radius(0);
+    }
+}
+
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+    @include border-left-radius($border-radius-base);
+    @include border-right-radius(0);
+}
+
+.btn-group > .btn-group {
+    float: right;
+}
+
+.btn-group.btn-group-justified > .btn,
+.btn-group.btn-group-justified > .btn-group {
+    float: none;
+}
+
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0;
+}
+
+.btn-group > .btn-group {
+    > .btn:last-child,
+    > .dropdown-toggle {
+        @include border-right-radius($border-radius-base);
+        @include border-left-radius(0);
+    }
+}
+
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+    @include border-left-radius($border-radius-base);
+    @include border-right-radius(0);
+}
+
+.btn .caret {
+    margin-right: 0;
+}
+
+.btn-group-vertical {
+    > .btn + .btn,
+    > .btn + .btn-group,
+    > .btn-group + .btn,
+    > .btn-group + .btn-group {
+        margin-top: -1px;
+        margin-right: 0;
+    }
+}

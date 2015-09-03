@@ -1,0 +1,48 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#dialogs #{t['Dialogs']}
+    .row
+        .col-lg-6
+            h2 #{t['Modals']}
+            .bs-component
+                .modal
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button.close(type="button", data-dismiss="modal", aria-hidden="true") &#215;
+                                h4.modal-title #{t['Modal title']}
+                            .modal-body
+                                p #{t['One fine body']}&#8230;
+                            .modal-footer
+                                button.btn.btn-default(type="button", data-dismiss="modal") #{t['Close']}
+                                button.btn.btn-primary(type="button") #{t['Save changes']}
+        .col-lg-6
+            h2 #{t['Popovers']}
+            .bs-component
+                button.btn.btn-default(type="button", data-container="body", data-toggle="popover", data-placement="left", data-content="#{t['Tooltip text']}", data-original-title="", title="") #{t['Left']}
+                button.btn.btn-default(type="button", data-container="body", data-toggle="popover", data-placement="top", data-content="#{t['Tooltip text']}", data-original-title="", title="") #{t['Top']}
+                button.btn.btn-default(type="button", data-container="body", data-toggle="popover", data-placement="bottom", data-content="#{t['Tooltip text']}", data-original-title="", title="") #{t['Bottom']}
+                button.btn.btn-default(type="button", data-container="body", data-toggle="popover", data-placement="right", data-content="#{t['Tooltip text']}", data-original-title="", title="") #{t['Right']}
+            h2 #{t['Tooltips']}
+            .bs-component
+                button.btn.btn-default(type="button", data-toggle="tooltip", data-placement="left", title="", data-original-title="#{t['Tooltip on left']}") #{t['Left']}
+                button.btn.btn-default(type="button", data-toggle="tooltip", data-placement="top", title="", data-original-title="#{t['Tooltip on top']}") #{t['Top']}
+                button.btn.btn-default(type="button", data-toggle="tooltip", data-placement="bottom", title="", data-original-title="#{t['Tooltip on bottom']}") #{t['Bottom']}
+                button.btn.btn-default(type="button", data-toggle="tooltip", data-placement="right", title="", data-original-title="#{t['Tooltip on right']}") #{t['Right']}
+#source-modal.modal.fade(style="display: none;")
+    .modal-dialog.modal-lg
+        .modal-content
+            .modal-header
+                button.close(type="button", data-dismiss="modal", aria-hidden="true") &#215;
+                h4.modal-title #{t['Source Code']}
+            .modal-body
+                pre.
+                    <a href="#" class="btn btn-default disabled">#{t['Default']}</a>
+                    <a href="#" class="btn btn-primary disabled">#{t['Primary']}</a>
+                    <a href="#" class="btn btn-success disabled">#{t['Success']}</a>
+                    <a href="#" class="btn btn-info disabled">#{t['Info']}</a>
+                    <a href="#" class="btn btn-warning disabled">#{t['Warning']}</a>
+                    <a href="#" class="btn btn-danger disabled">#{t['Danger']}</a>
+                    <a href="#" class="btn btn-link disabled">#{t['Link']}</a>

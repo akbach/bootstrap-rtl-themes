@@ -1,0 +1,110 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#container #{t['Containers']}
+            .bs-component
+                .jumbotron
+                    h1 #{t['Jumbotron']}
+                    p
+                        | #{t['Jumbotron text']}
+                    p
+                        a.btn.btn-primary.btn-lg #{t['Learn more']}
+    .row
+        .col-lg-12
+            h2 #{t['List groups']}
+    .row
+        .col-lg-4
+            .bs-component
+                ul.list-group
+                    li.list-group-item
+                        span.badge 14
+                        | #{t['Cras justo odio']}
+                    li.list-group-item
+                        span.badge 2
+                        | #{t['Dapibus ac facilisis in']}
+                    li.list-group-item
+                        span.badge 1
+                        | #{t['Morbi leo risus']}
+        .col-lg-4
+            .bs-component
+                .list-group
+                    a.list-group-item.active(href="#")
+                        | #{t['Cras justo odio']}
+                    a.list-group-item(href="#")
+                        | #{t['Dapibus ac facilisis in']}
+                    a.list-group-item(href="#")
+                        | #{t['Morbi leo risus']}
+        .col-lg-4
+            .bs-component
+                .list-group
+                    a.list-group-item(href="#")
+                        h4.list-group-item-heading #{t['List group item heading']}
+                        p.list-group-item-text
+                            | #{t['List gourp text']}
+                    a.list-group-item(href="#")
+                        h4.list-group-item-heading #{t['List group item heading']}
+                        p.list-group-item-text
+                            | #{t['List gourp text']}.
+    .row
+        .col-lg-12
+            h2 #{t['Panels']}
+    .row
+        .col-lg-4
+            .bs-component
+                .panel.panel-default
+                    .panel-body
+                        | #{t['Basic panel']}
+                .panel.panel-default
+                    .panel-heading #{t['Panel heading']}
+                    .panel-body
+                        | #{t['Panel content']}
+                .panel.panel-default
+                    .panel-body
+                        | #{t['Panel content']}
+                    .panel-footer #{t['Panel footer']}
+        .col-lg-4
+            .bs-component
+                .panel.panel-primary
+                    .panel-heading
+                        h3.panel-title #{t['Panel primary']}
+                    .panel-body
+                        | #{t['Panel content']}
+                .panel.panel-success
+                    .panel-heading
+                        h3.panel-title #{t['Panel success']}
+                    .panel-body
+                        | #{t['Panel content']}
+                .panel.panel-warning
+                    .panel-heading
+                        h3.panel-title #{t['Panel warning']}
+                    .panel-body
+                        | #{t['Panel content']}
+        .col-lg-4
+            .bs-component
+                .panel.panel-danger
+                    .panel-heading
+                        h3.panel-title #{t['Panel danger']}
+                    .panel-body
+                        | #{t['Panel content']}
+                .panel.panel-info
+                    .panel-heading
+                        h3.panel-title #{t['Panel info']}
+                    .panel-body
+                        | #{t['Panel content']}
+    .row
+        .col-lg-12
+            h2 Wells
+    .row
+        .col-lg-4
+            .bs-component
+                .well
+                    | #{t["Look I'm in a well!"]}
+        .col-lg-4
+            .bs-component
+                .well.well-sm
+                    | #{t["Look I'm in a small well!"]}
+        .col-lg-4
+            .bs-component
+                .well.well-lg
+                    | #{t["Look I'm in a large well!"]}

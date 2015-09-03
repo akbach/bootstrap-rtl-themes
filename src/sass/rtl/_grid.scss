@@ -1,0 +1,13 @@
+@include make-rtl-grid-columns;
+@include make-rtl-grid(xs);
+@media (min-width: $screen-sm-min) {
+    @include make-rtl-grid(sm);
+}
+
+@media (min-width: $screen-md-min) {
+    @include make-rtl-grid(md);
+}
+
+@media (min-width: $screen-lg-min) {
+    @include  make-rtl-grid(lg);
+}

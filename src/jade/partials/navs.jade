@@ -1,0 +1,139 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#nav #{t['Navs']}
+    .row
+        .col-lg-6
+            h2#nav-tabs #{t['Tabs']}
+            .bs-component
+                ul.nav.nav-tabs
+                    li.active
+                        a(href="#home", data-toggle="tab") #{t['Home']}
+                    li
+                        a(href="#profile", data-toggle="tab") #{t['Profile']}
+                    li.disabled
+                        a #{t['Disabled']}
+                    li.dropdown
+                        a.dropdown-toggle(data-toggle="dropdown", href="#")
+                            | #{t['Dropdown']}
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href="#dropdown1", data-toggle="tab") #{t['Action']}
+                            li.divider
+                            li
+                                a(href="#dropdown2", data-toggle="tab") #{t['Another action']}
+                #myTabContent.tab-content
+                    #home.tab-pane.fade.active.in
+                        p
+                            | #{t['tabs text 1']}.
+                    #profile.tab-pane.fade
+                        p
+                            | #{t['tabs text 2']}.
+                    #dropdown1.tab-pane.fade
+                        p
+                            | #{t['tabs text 3']}.
+                    #dropdown2.tab-pane.fade
+                        p
+                            | #{t['tabs text 4']}.
+        .col-lg-6
+            h2#nav-pills #{t['Pills']}
+            .bs-component
+                ul.nav.nav-pills.nav-stacked
+                    li.active
+                        a(href="#") #{t['Home']}
+                    li
+                        a(href="#") #{t['Profile']}
+                    li.disabled
+                        a(href="#") #{t['Disabled']}
+                    li.dropdown
+                        a.dropdown-toggle(data-toggle="dropdown", href="#")
+                            | #{t['Dropdown']}
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href="#") #{t['Action']}
+                            li
+                                a(href="#") #{t['Another action']}
+                            li
+                                a(href="#") #{t['Something else here']}
+                            li.divider
+                            li
+                                a(href="#") #{t['Separated link']}
+    .row
+        .col-lg-12
+            h2#nav-breadcrumbs #{t['Breadcrumbs']}
+            .bs-component
+                ul.breadcrumb
+                    li.active #{t['Home']}
+                ul.breadcrumb
+                    li
+                        a(href="#") #{t['Home']}
+                    li.active #{t['Library']}
+                ul.breadcrumb
+                    li
+                        a(href="#") #{t['Home']}
+                    li
+                        a(href="#") #{t['Library']}
+                    li.active #{t['Data']}
+    .row
+        .col-lg-4
+            h2#pagination #{t['Pagination']}
+            .bs-component
+                ul.pagination
+                    li.disabled
+                        a(href="#") &#171;
+                    li.active
+                        a(href="#") 1
+                    li
+                        a(href="#") 2
+                    li
+                        a(href="#") 3
+                    li
+                        a(href="#") 4
+                    li
+                        a(href="#") 5
+                    li
+                        a(href="#") &#187;
+                ul.pagination.pagination-lg
+                    li.disabled
+                        a(href="#") &#171;
+                    li.active
+                        a(href="#") 1
+                    li
+                        a(href="#") 2
+                    li
+                        a(href="#") 3
+                    li
+                        a(href="#") &#187;
+                ul.pagination.pagination-sm
+                    li.disabled
+                        a(href="#") &#171;
+                    li.active
+                        a(href="#") 1
+                    li
+                        a(href="#") 2
+                    li
+                        a(href="#") 3
+                    li
+                        a(href="#") 4
+                    li
+                        a(href="#") 5
+                    li
+                        a(href="#") &#187;
+        .col-lg-4
+            h2#pager #{t['Pager']}
+            .bs-component
+                ul.pager
+                    li
+                        a(href="#") #{t['Previous']}
+                    li
+                        a(href="#") #{t['Next']}
+
+                ul.pager
+                    li.next
+                        a(href="#") #{t['Newer']} &#8592;
+                    li.previous.disabled
+                        a(href="#") &#8594; #{t['Older']}
+        .col-lg-4

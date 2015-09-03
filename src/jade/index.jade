@@ -1,0 +1,28 @@
+//- index.jade
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Bootswatch: Cyborg
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        link(rel="stylesheet", href="./style.css")
+        link(rel="stylesheet", href="/dist/css/bootstrap-rtl.css")
+        //if lt IE 9
+            script(src="../bower_components/html5shiv/dist/html5shiv.js")
+            script(src="../bower_components/respond/dest/respond.min.js")
+        script(src="/bower_components/jquery/dist/jquery.min.js")
+        script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+  body
+    .container
+        include ./partials/navbar.jade
+        include ./partials/buttons.jade
+        include ./partials/typography.jade
+        include ./partials/tables.jade
+        include ./partials/forms.jade
+        include ./partials/navs.jade
+        include ./partials/indicators.jade
+        include ./partials/progress.jade
+        include ./partials/containers.jade
+        include ./partials/dialogs.jade
+    script(src="./script.js")

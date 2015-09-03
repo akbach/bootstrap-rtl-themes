@@ -1,0 +1,39 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#progress #{t['Progress bars']}
+            h3#progress-basic #{t['Basic']}
+            .bs-component
+                .progress
+                    .progress-bar(style="width: 60%;")
+            h3#progress-alternatives #{t['Contextual alternatives']}
+            .bs-component
+                .progress
+                    .progress-bar.progress-bar-info(style="width: 20%")
+                .progress
+                    .progress-bar.progress-bar-success(style="width: 40%")
+                .progress
+                    .progress-bar.progress-bar-warning(style="width: 60%")
+                .progress
+                    .progress-bar.progress-bar-danger(style="width: 80%")
+            h3#progress-striped #{t['Striped']}
+            .bs-component
+                .progress.progress-striped
+                    .progress-bar.progress-bar-info(style="width: 20%")
+                .progress.progress-striped
+                    .progress-bar.progress-bar-success(style="width: 40%")
+                .progress.progress-striped
+                    .progress-bar.progress-bar-warning(style="width: 60%")
+                .progress.progress-striped
+                    .progress-bar.progress-bar-danger(style="width: 80%")
+            h3#progress-animated #{t['Animated']}
+            .bs-component
+                .progress.progress-striped.active
+                    .progress-bar(style="width: 45%")
+            h3#progress-stacked #{t['Stacked']}
+            .bs-component
+                .progress
+                    .progress-bar.progress-bar-success(style="width: 35%")
+                    .progress-bar.progress-bar-warning(style="width: 20%")
+                    .progress-bar.progress-bar-danger(style="width: 10%")

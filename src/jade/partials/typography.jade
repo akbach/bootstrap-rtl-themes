@@ -1,0 +1,67 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#type #{t['Typography']}
+    // Headings
+    .row
+        .col-lg-4
+            .bs-component
+                h1 #{t['Heading 1']}
+                h2 #{t['Heading 2']}
+                h3 #{t['Heading 3']}
+                h4 #{t['Heading 4']}
+                h5 #{t['Heading 5']}
+                h6 #{t['Heading 6']}
+                p.lead #{t['p text']}.
+        .col-lg-4
+            .bs-component
+                h2 #{t['Example body text']}
+                p
+                    | #{t['Typography ligne 1']} &nbsp;
+                    a(href="#") #{t['Typography link']} &nbsp;
+                    | #{t['Typography ligne 2']}.
+                p
+                    small #{t['This line of text is meant to be treated as fine print']}.
+                p
+                    | #{t['The following snippet of text is']}
+                    strong #{t['rendered as bold text']}
+                    | .
+                p
+                    | #{t['The following snippet of text is']}
+                    em #{t['rendered as italicized text']}
+                    | .
+                p
+                    | #{t['An abbreviation of the word attribute is']} &nbsp;
+                    abbr(title="#{t['attribute']}") #{t['attr']}
+                    | .
+        .col-lg-4
+            .bs-component
+                h2 #{t['Emphasis classes']}
+                p.text-muted #{t['text-muted']}.
+                p.text-primary #{t['text-primary']}.
+                p.text-warning #{t['text-primary']}.
+                p.text-danger #{t['text-danger']}.
+                p.text-success #{t['text-success']}.
+                p.text-info #{t['text-info']}.
+    // Blockquotes
+    .row
+        .col-lg-12
+            h2#type-blockquotes #{t['Blockquotes']}
+    .row
+        .col-lg-6
+            .bs-component
+                blockquote
+                    p
+                        | #{t['blockquote text']}.
+                    small
+                        | #{t['Someone famous in']}
+                        cite(title="Source Title") #{t['Source Title']}
+        .col-lg-6
+            .bs-component
+                blockquote.pull-right
+                    p
+                        | #{t['blockquote right text']}
+                    small
+                        | #{t['Someone famous in']}
+                        cite(title="Source Title") #{t['Source Title']}

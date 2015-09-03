@@ -1,0 +1,93 @@
+.bs-docs-section
+    .row
+        .col-lg-12
+            .page-header
+                h1#forms #{t['Forms']}
+    .row
+        .col-lg-6
+            .well.bs-component
+                form.form-horizontal
+                    fieldset
+                        legend #{t['Legend']}
+                        .form-group
+                            label.col-lg-4.control-label(for="inputEmail") #{t['Email']}
+                            .col-lg-8
+                                input#inputEmail.form-control(type="text", placeholder="#{t['Email']}")
+                        .form-group
+                            label.col-lg-4.control-label(for="inputPassword") #{t['Password']}
+                            .col-lg-8
+                                input#inputPassword.form-control(type="password", placeholder="#{t['Password']}")
+                                .checkbox
+                                    label
+                                        input(type="checkbox")
+                                        | #{t['Checkbox']}
+                        .form-group
+                            label.col-lg-4.control-label(for="textArea") #{t['Textarea']}
+                            .col-lg-8
+                                textarea#textArea.form-control(rows="3")
+                                span.help-block
+                                    | #{t['Textarea discription text']}.
+                        .form-group
+                            label.col-lg-4.control-label #{t['Radios']}
+                            .col-lg-8
+                                .radio
+                                    label
+                                        input#optionsRadios1(type="radio", name="optionsRadios", value="option1", checked="")
+                                        | #{t['Option one is this']}
+                                .radio
+                                    label
+                                        input#optionsRadios2(type="radio", name="optionsRadios", value="option2")
+                                        | #{t['Option two can be something else']}
+                        .form-group
+                            label.col-lg-4.control-label(for="select") #{t['Selects']}
+                            .col-lg-8
+                                select#select.form-control
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                                br
+                                select.form-control(multiple="")
+                                    option 1
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                        .form-group
+                            .col-lg-8.col-lg-offset-2
+                                button.btn.btn-default(type="reset") #{t['Cancel']}
+                                button.btn.btn-primary(type="submit") #{t['Submit']}
+        .col-lg-4.col-lg-offset-1
+            form.bs-component
+                .form-group
+                    label.control-label(for="focusedInput") #{t['Focused input']}
+                    input#focusedInput.form-control(type="text", value="#{t['This is focused']}...")
+                .form-group
+                    label.control-label(for="disabledInput") #{t['Disabled input']}
+                    input#disabledInput.form-control(type="text", placeholder="#{t['Disabled input here']}...", disabled="")
+                .form-group.has-warning
+                    label.control-label(for="inputWarning") #{t['Input warning']}
+                    input#inputWarning.form-control(type="text")
+                .form-group.has-error
+                    label.control-label(for="inputError") #{t['Input error']}
+                    input#inputError.form-control(type="text")
+                .form-group.has-success
+                    label.control-label(for="inputSuccess") #{t['Input success']}
+                    input#inputSuccess.form-control(type="text")
+                .form-group
+                    label.control-label(for="inputLarge") #{t['Large input']}
+                    input#inputLarge.form-control.input-lg(type="text")
+                .form-group
+                    label.control-label(for="inputDefault") #{t['Default input']}
+                    input#inputDefault.form-control(type="text")
+                .form-group
+                    label.control-label(for="inputSmall") #{t['Small input']}
+                    input#inputSmall.form-control.input-sm(type="text")
+                .form-group
+                    label.control-label #{t['Input addons']}
+                    .input-group
+                        span.input-group-addon $
+                        input.form-control(type="text")
+                        span.input-group-btn
+                            button.btn.btn-default(type="button") #{t['Button']}
