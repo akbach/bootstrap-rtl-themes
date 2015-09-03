@@ -1,43 +1,43 @@
 {
-  "name": "bootstrap-rtl",
-  "description": "Right-to-left (RTL) theme for Boostrap 3.x",
-  "version": "3.3.4",
-  "style": "dist/css/bootstrap-rtl.css",
-  "homepage": "http://github.com/morteza/bootstrap-rtl",
-  "author": "Morteza Ansarinia (http://github.com/morteza)",
-  "keywords": [
-    "twitter",
-    "bootstrap",
-    "rtl",
-    "css",
-    "arabic",
-    "persian",
-    "farsi",
-    "hebrew",
-    "themes"
-  ],
-  "engines": {
-    "node": "~0.10.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/morteza/bootstrap-rtl.git"
-  },
-  "bugs": {
-    "url": "https://github.com/morteza/bootstrap-rtl/issues"
-  },
-  "licenses": [
-    {
-      "type": "Unlicensed Public Domain"
+    "name": "bootstrap-rtl",
+    "description": "Bootstrap for RTL (Right to Left) languages (Arabic, Hebrew, Persian) with Bootswatch themes",
+    "version": "3.3.5",
+    "style": "dist/css/bootstrap-rtl.css",
+    "homepage": "https://github.com/akbach/bootstrap-rtl-themes",
+    "author": "Akbach Abdelfattah (http://github.com/akbach)",
+    "keywords": [
+        "twitter",
+        "bootstrap",
+        "rtl",
+        "right2Left",
+        "css",
+        "arabic",
+        "persian",
+        "farsi",
+        "hebrew",
+        "themes",
+        "Bootswatch"
+    ],
+    "engines": {
+        "node": "~0.12.7"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/akbach/bootstrap-rtl-themes"
+    },
+    "bugs": {
+        "url": "https://github.com/akbach/bootstrap-rtl-themes/issues"
+    },
+    "licenses": [{
+        "type": "MIT"
+    }],
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-clean": "^0.3.1",
+        "gulp-jade": "^1.1.0",
+        "gulp-minify-css": "^1.2.1",
+        "gulp-serve": "^1.0.0",
+        "node-dir": "^0.1.8",
+        "run-sequence": "^1.1.2"
     }
-  ],
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-clean": "^0.3.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-serve": "^1.0.0",
-    "node-dir": "^0.1.8",
-    "run-sequence": "^1.1.2"
-  }
 }

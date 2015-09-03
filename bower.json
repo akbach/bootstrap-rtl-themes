@@ -2,14 +2,13 @@
     "name": "bootstrap-rtl",
     "description": "Bootstrap for RTL (Right to Left) languages (Arabic, Hebrew, Persian) with Bootswatch themes",
     "version": "3.3.5",
-    "homepage": "https://github.com/akbach/bootstrap-rtl",
+    "homepage": "https://github.com/akbach/bootstrap-rtl-themes",
     "authors": [
         "Akbach Abdelfattah (http://github.com/akbach)"
     ],
     "main": [
-        "dist/css/bootstrap-rtl.css",
-        "
-        dist / js / bootstrap.js ",
+        "dist/css/bootstrap-rtl.min.css",
+        "dist/js/bootstrap.min.js"
     ],
     "dependencies": {
         "jquery": ">= 1.9.1"
