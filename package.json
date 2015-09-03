@@ -28,9 +28,11 @@
     "bugs": {
         "url": "https://github.com/akbach/bootstrap-rtl-themes/issues"
     },
-    "licenses": [{
-        "type": "MIT"
-    }],
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
     "devDependencies": {
         "gulp": "^3.9.0",
         "gulp-clean": "^0.3.1",
