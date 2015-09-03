@@ -1,6 +1,6 @@
 # Twitter Bootstrap for RTL languages
 
-Bootstrap CSS abadted for RTL (right to left ) languages like (Arabic, Hebrew,Persian, ...) 
+Bootstrap for RTL (Right to Left) languages (Arabic, Hebrew, Persian) with Bootswatch themes.
 
 # Installation
 
@@ -13,4 +13,4 @@ Bootstrap CSS abadted for RTL (right to left ) languages like (Arabic, Hebrew,Pe
 
 # Demo
 
-[http://rlt.tips]
+http://rtl.tips/bootstrap-rtl

@@ -8,8 +8,12 @@
     ],
     "main": [
         "dist/css/bootstrap-rtl.css",
-        "dist/js/bootstrap.js",
+        "
+        dist / js / bootstrap.js ",
     ],
+    "dependencies": {
+        "jquery": ">= 1.9.1"
+    },
     "ignore": [
         "src",
         ".gitignore",
