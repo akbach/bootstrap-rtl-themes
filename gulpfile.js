@@ -3,7 +3,10 @@ var jade = require('gulp-jade');
 var sass = require('gulp-ruby-sass');
 var serve = require('gulp-serve');
 var clean = require('gulp-clean');
+var minifyCSS = require('gulp-minify-css');
 var runSequence = require('run-sequence');
+var rename = require('gulp-rename');
+
 
 var locals = require('./src/locals.json')
 
@@ -11,8 +14,14 @@ var locals = require('./src/locals.json')
 
 gulp.task('sass', function() {
     sass('src/sass/')
+        .pipe(gulp.dest('dist'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(minifyCSS())
         .pipe(gulp.dest('dist'));
 });
+
 
 gulp.task('clean', function() {
     return gulp.src('dist', {
